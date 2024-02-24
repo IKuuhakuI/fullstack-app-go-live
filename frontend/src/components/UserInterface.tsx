@@ -133,6 +133,34 @@ const UserInterface: React.FC<UserInterfaceProps> = ({ backendName }) => {
                 </button>
             </form>
 
+            { /* Update User */ }
+            <form onSubmit={handleUpdateUser} className="mb-6 p-4 bg-blue-100 rounded shadow">
+                <input 
+                    placeholder="User Id"
+                    value={updateUser.id}
+                    onChange={(e) => setUpdateUser({ ...updateUser, id: e.target.value })}
+                    className="mb-2 w-full p-2 border border-gray-300 rounded"
+                />
+                <input 
+                    placeholder="New Name"
+                    value={updateUser.name}
+                    onChange={(e) => setUpdateUser({ ...updateUser, name: e.target.value })}
+                    className="mb-2 w-full p-2 border border-gray-300 rounded"
+                />
+                <input 
+                    placeholder="New Email"
+                    value={updateUser.email}
+                    onChange={(e) => setUpdateUser({ ...updateUser, email: e.target.value })}
+                    className="mb-2 w-full p-2 border border-gray-300 rounded"
+                />
+                <button 
+                    type="submit" 
+                    className="w-full p-2 text-white bg-green-500 rounded hover:bg-green-600"
+                >
+                    Update User
+                </button>
+            </form>
+
             { /* Display Users */ }
             <div className="space-y-4">
                 {users.map((user) => (
