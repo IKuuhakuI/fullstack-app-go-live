@@ -58,7 +58,7 @@ const UserInterface: React.FC<UserInterfaceProps> = ({ backendName }) => {
             `}
         >
             <img 
-                src={`/${backendName}_logo.svg`} 
+                src={`/${backendName}logo.svg`} 
                 alt={`${backendName} Logo`} 
                 className="w-20 h-20 mb-6 mx-auto"
             />
