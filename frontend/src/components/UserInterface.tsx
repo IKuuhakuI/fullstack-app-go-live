@@ -56,6 +56,29 @@ const UserInterface: React.FC<UserInterfaceProps> = ({ backendName }) => {
             console.error("Error creating user:", error)
         }
     }
+    
+    // Update user
+    const handleUpdateUser = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        try {
+            await axios.put(
+                `${apiUrl}/api/${backendName}/users/${updateUser.id}`, 
+                {name: updateUser.name, email: updateUser.email}
+            );
+            setUpdateUser({ id: '', name: '', email: ''})
+            setUsers(
+                users.map((user) => {
+                    if(user.id === parseInt(updateUser.id)) {
+                        return { ...user, name: updateUser.name, email: updateUser.email };
+                    }
+                    return user;
+                })
+            );
+        } catch (error) {
+            console.error("Error updating user:", error)
+        }
+    }
 
     return (
         <div 
