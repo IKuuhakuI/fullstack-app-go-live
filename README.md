@@ -26,7 +26,7 @@ This project demonstrates the implementation of a full-stack web application, co
 Before running this project, ensure you have the following installed:
 
 - [Docker](https://www.docker.com/)
-- [NextJS] (https://nextjs.org/)
+- [NextJS](https://nextjs.org/)
 
 ## Setup and Usage
 
