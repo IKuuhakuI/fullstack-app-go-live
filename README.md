@@ -11,6 +11,7 @@ This project demonstrates the implementation of a full-stack web application, co
 ## Features
 
 - **Backend (GoApp)**:
+
   - RESTful API endpoints for user management (CRUD operations).
   - PostgreSQL database integration using the `database/sql` package.
   - Dockerized setup for easy deployment.
@@ -25,7 +26,7 @@ This project demonstrates the implementation of a full-stack web application, co
 Before running this project, ensure you have the following installed:
 
 - [Docker](https://www.docker.com/)
-- [INSERT_FRONTEND_TECHNOLOGY_HERE]
+- [NextJS] (https://nextjs.org/)
 
 ## Setup and Usage
 
@@ -33,18 +34,20 @@ Before running this project, ensure you have the following installed:
 
    ```bash
    git clone https://github.com/YOUR_USERNAME/fullstack-go-live.git
+   ```
 
 2. Navigate to the project directory:
 
-    ```bash
-    cd fullstack-go-live
-
+   ```bash
+   cd fullstack-go-live
+   ```
 
 3. Build and run the Docker containers:
 
-    ```bash
-    docker-compose up --build
+   ```bash
+   docker-compose up --build
+   ```
 
 4. Access the application:
-    - Backend API: http://localhost:8000
-    - Frontend UI: http://localhost:3000
+   - Backend API: http://localhost:8000
+   - Frontend UI: http://localhost:3000
